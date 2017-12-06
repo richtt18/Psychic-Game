@@ -5,9 +5,17 @@
     font-family: 'Macondo Swash Caps', cursive;
     }
     h1{
-      color:black
+      color:white;
     }
-  # mark {
-    float:right;
-    position:absolute;
-  }
+
+    h6 {
+      margin-bottom: auto;
+    }
+
+    .footer {
+      background: none repeat scroll 0 0 transparent;
+      bottom: 0;
+      position: fixed;
+      text-align: center;
+      width: 100%;
+    }
