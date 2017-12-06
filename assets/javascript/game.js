@@ -23,8 +23,11 @@ console.log(computerGuess);
     };
 
     var updateLetterToGuess = function() {
-      this.letterToGuess = this.computerChoices[Math.floor(Math.random() * this.computerChoices.length)];
+      console.log("letter to guess")
+      computerGuess = computerChoices[Math.floor(Math.random() * this.computerChoices.length)];
+      console.log("computer guess", computerGuess)
     };
+
     var updateGuessesSoFar = function() {
 
       document.querySelector('#let').innerHTML = "Your Guesses so far: " + guessedLetters.join(', ');
@@ -34,7 +37,7 @@ console.log(computerGuess);
       totalGuesses = 8;
       guessesLeft = 8;
       guessedLetters = [];
-
+      console.log("reset")
       updateLetterToGuess();
       updateGuessesLeft();
       updateGuessesSoFar();
