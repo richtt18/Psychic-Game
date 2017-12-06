@@ -48,13 +48,14 @@ console.log(computerGuess);
     document.onkeyup = function(event) {
         guessesLeft--;
       var userGuess = String.fromCharCode(event.keyCode).toLowerCase();
+      console.log(userGuess);
 
       guessedLetters.push(userGuess);
       updateGuessesLeft();
       updateGuessesSoFar();
 
             if (guessesLeft > 0){
-                if (userGuess == letterToGuess){
+                if (userGuess == computerGuess){
                     wins++;
                     document.querySelector('#wins').innerHTML = "Wins: " + wins;
                     alert("Yes, the force is strong!");
